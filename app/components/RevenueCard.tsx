@@ -1,16 +1,16 @@
 function RevenueCard({ type='payout', amount='0', orders='0', nextPayment="" }) {
   return (
     <div
-      className={`rounded-xl shadow-md ${
+      className={`w-full rounded-xl shadow-sm ${
         type == "payout" ? "text-white border-blue-500" : null
       }`}
     >
       <div
         className={`${
-          type == "payout" ? "bg-blue-500" : "bg-white"
-        } rounded-t-md p-5`}
+          type == "payout" ? "bg-blue-500 rounded-t-md" : "bg-white rounded-md"
+        } p-5`}
       >
-        <div className="p-1 flex">
+        <div className="p-1 flex mb-3">
           {type == "payout" ? <div>Next Payout </div> : null}
           {type == "pending" ? (
             <div className="text-gray-700">Amount Pending</div>
@@ -35,8 +35,10 @@ function RevenueCard({ type='payout', amount='0', orders='0', nextPayment="" }) 
             </svg>
           </div>
         </div>
-        <div className="flex justify-between text-3xl font-medium ">
+        <div className="flex justify-between text-3xl font-medium  ">
           <div className="font-semibold">₹{amount}</div>
+
+
           {orders && (type == "pending" || type == "payout") ? (
             <div
               className={`flex underline text-base items-center ${

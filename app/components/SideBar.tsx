@@ -1,6 +1,6 @@
 function SideBar({ logo = "nishyan.svg", storeName = "Nishyan", credits="233.20"}) {
   return (
-    <div className="bg-blue-900 text-white h-screen flex flex-col ">
+    <div className="bg-blue-900 text-white h-full flex flex-col ">
       <div className="p-3 flex ">
         <div>
           <img src={logo} className="h-12 w-12 rounded-xl"></img>
