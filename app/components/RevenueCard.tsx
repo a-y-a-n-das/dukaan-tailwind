@@ -25,7 +25,7 @@ function RevenueCard({ type='payout', amount='0', orders='0', nextPayment="" }) 
               viewBox="0 0 24 24"
               stroke-width="2.2"
               stroke="currentColor"
-              class="size-4.5"
+              className="size-4.5"
             >
               <path
                 stroke-linecap="round"

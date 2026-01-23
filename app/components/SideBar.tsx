@@ -17,7 +17,7 @@ function SideBar({ logo = "nishyan.svg", storeName = "Nishyan", credits="233.20"
               viewBox="0 0 24 24"
               stroke-width="3"
               stroke="currentColor"
-              class="size-7"
+              className="size-7"
             >
               <path
                 stroke-linecap="round"
@@ -37,7 +37,7 @@ function SideBar({ logo = "nishyan.svg", storeName = "Nishyan", credits="233.20"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-13"
+              className="size-13"
             >
               <path
                 stroke-linecap="round"

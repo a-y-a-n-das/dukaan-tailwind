@@ -28,43 +28,39 @@ function TransactionsTable() {
   return (
     <div>
       <div className="flex justify-between">
-        
-          <div class="relative  w-70 bg-whit mb-3 ">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none ">
-              <svg
-                class="w-4 h-4 text-body"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  sOrder ID or transactions ID
-troke-linecap="round"
-                  stroke-width="2"
-                  d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
-                />
-              </svg>
-            </div>
-            <input
-              type="search"
-              id="search"
-              class="block w-full p-3 ps-9 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body border-gray-300 rounded rounded-sm h-10"
-              placeholder="Order ID or transactions ID
-"
-              required
-            />
+        <div className="relative  w-70 bg-whit mb-3 ">
+          <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none ">
+            <svg
+              className="w-4 h-4 text-body"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+              />
+            </svg>
           </div>
-       
+          <input
+            type="search"
+            id="search"
+            className="block w-full p-3 ps-9 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body border-gray-300 rounded rounded-sm h-10"
+            placeholder="Order ID or transactions ID
+"
+            required
+          />
+        </div>
 
-        <div className="flex border p-2 w-12 h-10 border-gray-300 rounded-sm items-center">Sort</div>
+        <div className="flex border p-2 w-12 h-10 border-gray-300 rounded-sm items-center">
+          Sort
+        </div>
       </div>
-
-
-
 
       <div className="grid grid-cols-5 items-center bg-gray-200 rounded-sm p-3 text-gray-500 font-semibold mb-1">
         <div>Order ID</div>
@@ -73,10 +69,6 @@ troke-linecap="round"
         <div>Refund Date</div>
         <div className=" text-right">Order Amount</div>
       </div>
-
-
-
-
 
       {transactions.map((t) => (
         <div>
